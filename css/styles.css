@@ -84,7 +84,7 @@ nav img {
     margin: 0 auto;
 }
 
-main {
+.home-container {
     width: 80%;
     max-width: 1220px;
     min-width: 330px;
@@ -92,7 +92,7 @@ main {
     height: 100vh;
 }
 
-section {
+.home-wrapper {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -102,7 +102,7 @@ section {
     background: #ffffff;
     box-shadow: 2px 2px 2px rgba(148, 148, 148, 0.5);
     border-radius: 8px;
-    min-width: 330px;
+    width: 350px;
     min-height: 145px;
     margin-right: 25px;
     display: flex;
@@ -130,6 +130,7 @@ section {
 
 .recipe a img {
     height: 150px;
+    width: 170px;
     border-radius: 8px 0 0 8px;
     margin-bottom: 0;
 }
@@ -177,3 +178,16 @@ section {
     color: #7a7a7a;
     text-transform: uppercase;
 }
+
+.details-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: green;
+}
+
+.details-wrapper {
+
+}
+
+
