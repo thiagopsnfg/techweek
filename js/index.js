@@ -19,7 +19,19 @@ const createRecipes = (recipes) => {
     recipeDiv.className = "recipe";
   
     const link = document.createElement("a");
-    link.setAttribute('href', "/recipe.html"); 
+    link.setAttribute('href', "/recipe.html");
+    link.id = recipe.id;
+    
+    link.onclick= function (event) {
+      const list = localStorage.getItem("recipes");
+      const recipes = JSON.parse(list);
+      
+      const r = recipes.filter( recipe => {
+         return recipe.id === link.id;
+      });
+      
+      localStorage.setItem("recipe", JSON.stringify(r[0]));
+    };
 
     const img = document.createElement("img");
     img.setAttribute('src', recipe.image_url); 
@@ -56,17 +68,16 @@ const search = (event) => {
   "Content-Type": "multipart/form-data",
   "Accept": "application/json",
   "Authorization": "Token token=4ecfd71f20ddf4011acd349edandroid",
-});
+ });
 
 const config = {
   method: 'GET',
   headers: myHeaders,
-};
+ };
  
  fetch(`http://api.tudogostoso.com.br/api/search/${term}/p${1}.json`, config)
  .then(response => response.json())
  .then((response) => {
-   localStorage.setItem("recipes", "");
    localStorage.setItem("recipes", JSON.stringify(response.items));
    createRecipes(response.items);
  })

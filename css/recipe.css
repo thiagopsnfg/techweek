@@ -1,0 +1,58 @@
+.card-box{
+  background-color: white;
+  padding: 30px 40px;
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px rgba(188, 188, 188, 0.5);
+  width: 50%;
+  text-align: center;
+}
+
+.card-main-title {
+  font-family: 'Cookie', cursive;
+  font-size: 50px;
+  color: #81b709;
+  line-height: 0.8;
+}
+
+.card-info{
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.card-box img{
+
+  max-width: 100%;
+
+}
+
+.card-box h2{
+  font-family:"Lato";
+  font-size: 24px;
+  color: orange;
+  border-bottom: 1px solid gray;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.card-box ul{
+  text-align: left;
+}
+
+.card-box li{
+  padding-bottom: 10px;
+}
+
+.botao-lista{
+
+  background-color: orange;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 17px;
+  margin-top: 10px;
+  border: 0;
+  padding: 10px;
+
+
+
+}
