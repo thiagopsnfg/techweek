@@ -191,7 +191,7 @@ nav img {
 }
 
 .search-container {
-    width: 31%;
+    width: 30%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -252,6 +252,7 @@ section {
 
 .recipe {
     background: #ffffff;
+    box-shadow: 2px 2px 2px #888888;
     border-radius: 8px;
     min-width: 330px;
     min-height: 145px;
@@ -266,6 +267,10 @@ section {
     font-size: 12px;
     transition: 0.3s;
     margin-top: 25px;
+}
+
+.recipe:hover {
+    box-shadow: 4px 4px 4px #888888;
 }
 
 .recipe a {
