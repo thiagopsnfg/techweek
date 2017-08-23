@@ -1,155 +1,3 @@
-/*
-.navigation {
-    background: #5da4da;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px;
-}
-
-.navigation a {
-    text-decoration: none;
-    padding: 5px 10px;
-    color: #fff;
-}
-
-
-
-.navigation a:hover {
-    color: #ff0;
-}
-
-.container {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    color: #777;
-}
-
-header {
-    background: #5da4da;
-    box-shadow: 1px 2px 3px #ccc;
-    border-radius: 10px;
-    color: #fff;
-    margin-top: 30px;
-}
-
-figure {
-    margin: 0;
-}
-
-figcaption {
-    padding: 10px;
-}
-
-img {
-    width: 100%;
-}
-
-.content-card {
-    background-color: #fff;
-    padding: 20px;
-    margin-top: 25px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.content-card li {
-    border-bottom: 1px #bbb solid;
-    padding: 15px 0;
-}
-
-
-/* Removendo última linha */
-
-
-/*// .content-card li:last-child {
-//   border: 0;
-// }*/
-
-
-/* 
-  Alternativas de remover a última linha
-  Remover borda do primeiro
-
-
-.content-card li:not(:last-child) {
-    border-bottom: 1px #bbb solid;
-}
-
-.content-card h4 {
-    font-weight: bold;
-}
-
-.header-text {
-    padding: 15px;
-}
-
-.header-text h1 {
-    font-size: 30px;
-    margin: 8px 0;
-}
-
-.header-text h2 {
-    font-size: 20px;
-    margin: 5px 0;
-}
-
-.card-title {
-    font-size: 30px;
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-time {
-    display: block;
-    color: #5da4d9;
-    padding: 15px 0;
-}
-
-.progress-bar {
-    height: 3px;
-    width: 100%;
-    position: relative;
-}
-
-
-/*.progress-bar::before {
-  content: '';
-  position: absolute;
-  // top: 0;
-  // left: 0;
-  width: attr(data-value)%;
-  height: 100%;
-  background: rgb(0, 0, 255);
-}
-.progress-bar::after {
-  content: '';
-  position: absolute;
-  // top: 0;
-  // top: calc(50% - (15px / 2 ) ) ; 
-  top: 50%;
-  transform: translateY(-50%);
-  left: attr(data-value)%;
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  background: rgb(0, 0, 255);
-}
-
-.img-container {
-    position: relative;
-}
-
-.img-container img:first-child {}
-
-.img-container img:last-child {
-    top: 0;
-    position: absolute;
-    transform: rotateY(50deg);
-    animation: ;
-}
-
-*/
-
 body {
     width: 100%;
     font-family: Arial;
@@ -204,7 +52,7 @@ nav img {
     position: relative;
 }
 
-.searct-term {
+.search-term {
     font-size: 13px;
     width: 170px;
     height: 22px;
@@ -238,7 +86,7 @@ nav img {
 
 main {
     width: 80%;
-    max-width: 1065px;
+    max-width: 1220px;
     min-width: 330px;
     margin: 0 auto;
     height: 100vh;
@@ -252,7 +100,7 @@ section {
 
 .recipe {
     background: #ffffff;
-    box-shadow: 2px 2px 2px #888888;
+    box-shadow: 2px 2px 2px rgba(148, 148, 148, 0.5);
     border-radius: 8px;
     min-width: 330px;
     min-height: 145px;
@@ -270,7 +118,7 @@ section {
 }
 
 .recipe:hover {
-    box-shadow: 4px 4px 4px #888888;
+    box-shadow:  4px 4px 2px rgba(148, 148, 148, 0.5);
 }
 
 .recipe a {
@@ -325,7 +173,6 @@ section {
 .recipe-container h3 {
     font-size: 15px;
     max-width: 160px;
-    max-height: 55px;
     overflow: hidden;
     color: #7a7a7a;
     text-transform: uppercase;
